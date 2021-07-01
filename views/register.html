@@ -63,9 +63,9 @@
         <form action="new-account" method="POST" class="form-new-account">
             <div class="user-container form-element w90">
                 <label for="name">Datos personales </label>
-                <input type="text" name="name" id="name" placeholder="Nombre(s)">
-                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-                <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                <input type="text" name="name" id="name" placeholder="Nombre(s)" minlength="3" required>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" minlength="3" required>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario" minlength="5" required>
             </div>
             <div class="birthday-container form-element w90">
                 <label for="birthday">Fecha de nacimiento </label>
@@ -73,16 +73,16 @@
             </div>
             <div class="address-container form-element w90">
                 <label for="address">Domicilio </label>
-                <input type="text" name="estado" id="address" placeholder="Estado">
-                <input type="text" name="calle" id="calle" placeholder="Calle">
-                <input type="text" name="colonia" id="colonia" placeholder="colonia">
-                <input type="text" name="cp" id="cp" placeholder="Código Postal">
+                <input type="text" name="estado" id="address" placeholder="Estado" minlength="5" required>
+                <input type="text" name="calle" id="calle" placeholder="Calle" minlength="5" required>
+                <input type="text" name="colonia" id="colonia" placeholder="Colonia" minlength="5" required>
+                <input type="text" name="cp" id="cp" placeholder="Código Postal" minlength="5" required>
             </div>
             <div class="profile-container form-element">
                 <label for="profile">Perfil de usuario </label>
-                <input type="radio" name="profile" id="comprar" value="Comprador">
+                <input type="radio" name="profile" id="comprar" value="Comprador" required>
                 <span>Comprador </span>
-                <input type="radio" name="profile" id="vender" value="Vendedor">
+                <input type="radio" name="profile" id="vender" value="Vendedor" required>
                 <span>Vendedor </span>
             </div>
             <div class="category-container form-element">
@@ -110,9 +110,9 @@
             </div>
             <div class="login-container form-element w90">
                 <label for="email">Datos de inicio de sesión</label>
-                <input type="email" name="email" id="email" placeholder="Correo Electrónico">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirma la contraseña">
+                <input type="email" name="email" id="email" placeholder="Correo Electrónico" minlength="8" required>
+                <input type="password" name="password" id="password" placeholder="Contraseña" minlength="8" required>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirma la contraseña" minlength="8" required>
             </div>
             <div class="button-container form-element">
                 <button type="submit" class="button-element send-button"><a href="home.html">Enviar!</a></button>
