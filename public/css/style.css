@@ -287,6 +287,10 @@ footer section:hover .icono3{
     font-size: 1.6rem;
 }
 
+.form-login-account h2{
+    padding: 10px 0;
+}
+
 /* .category-container{
     display: flex;
     justify-content: center;
