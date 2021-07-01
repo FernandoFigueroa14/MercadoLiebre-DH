@@ -1,0 +1,370 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.2rem;
+    background-color: var(--grisClaro);
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    background-color: var(--amarillo);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    margin: 3%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+main{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+footer section{
+    margin: 40px;
+}
+
+label{
+    display: block;
+}
+
+.logo-mercado-liebre{
+    width: 50%;
+}
+
+.buscador{
+    width: 45%;
+    /* margin-left: 30px; */
+    margin: 0%;
+    padding: 0 10px;
+    position: relative;
+}
+
+.buscador input{
+    width: 100%;
+}
+.buscador button{
+    width: 10%;
+    position: absolute;
+    right: 10px;
+}
+
+.campo__field{
+    width: 90%;
+    margin: auto;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-search{
+    background-color: var(--grisClaro);
+    padding: 0px;
+    border-radius: 10%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-header{
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.fa-bars{
+    background-color: var(--celeste);
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+footer .fas{
+    color: var(--celeste);
+    font-size: 2em;
+    margin: 10px;
+    transition: all .5s;
+}
+
+footer section:hover .icono1{
+    color: var(--azul);
+}
+footer section:hover .icono2{
+    color: var(--azul);
+}
+footer section:hover .icono3{
+    color: var(--azul);
+}
+
+.titulares{
+    font-size: 2.4rem;
+    margin: 20px 0;
+}
+
+.precio{
+    font-size: 1.8rem;
+    width: 30%;
+}
+
+.descuento{
+    font-size: 1.6rem;
+    color: var(--verde);
+    width: 70%;
+}
+
+.descripcion{
+    font-size: 1.6rem;
+    display: none;
+    padding-top: 10px;
+    transition: all 500ms;
+}
+
+.articulo:hover .descripcion{
+        display: block;
+}
+
+.cuotas{
+    text-align: center;
+    width: 100%;
+}
+
+.articulo{
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 15px;
+    transition: all 500ms;
+}
+
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.articulo-descripcion{
+    padding: 10px;
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-envio{
+    padding: 10px;
+    border: var(--verde) 1px solid;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    right: -40%;
+    top: 20px;
+}
+
+.fa-truck{
+    font-size: 1.8rem;
+    color: var(--verde);
+}
+
+.articulo:hover .fa-truck{
+    animation: rotacion 3s infinite normal;
+}
+
+@keyframes rotacion {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.articulos{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.form-new-account{
+    margin: auto;
+    width: 80%;
+    background-color: white;
+}
+
+.form-login-account{
+    margin: auto;
+    width: 80%;
+    background-color: white;
+}
+
+.form-element{
+    padding: 10px;
+}
+
+.form-element input{
+    border: var(--grisClaro) 2px solid;
+    transition: all 0.5s;
+}
+.form-login-account .form-element:hover input{
+    border: var(--verde) 2px solid;
+}
+
+.user-container input#name:hover, .user-container input#apellidos:hover, .user-container input#username:hover, .birthday-container:hover input, .address-container input#address:hover, .address-container input#calle:hover, .address-container input#colonia:hover, .address-container input#cp:hover, .login-container input#email:hover, .login-container input#password:hover, .login-container input#confirm-password:hover{
+    border: var(--verde) 2px solid;
+}
+
+.form-element *{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.form-element button{
+    width: 90%;
+    background-color: var(--celeste);
+    color: white;
+    border-radius: 5px;
+}
+
+.form-element button:hover{
+    background-color: var(--azul);
+}
+
+.form-element button a{
+    color: white;
+}
+
+.w90 input{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: block;
+}
+
+.form-new-account label{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/* .category-container{
+    display: flex;
+    justify-content: center;
+} */
+
+.category-list{
+    margin-left: 10px;
+    padding-bottom: 3px;
+    text-align: left;
+}
+
+.button-element{
+    padding: 3px;
+}
+
+.send-button, .reset-button{
+    transition: all .5s;
+}
+.send-button:hover, .reset-button:hover{
+    background-color: var(--azul);
+}
+
+.form-new-account h2{
+    padding: 10px 0;
+}
+
+@media (min-width: 480px) {
+    .articulo{
+        flex-basis: 45%;
+    }
+    .nav-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .nav-header ul{
+        display: flex;
+        padding: 10px;
+    }
+    .nav-header ul a{
+        margin: 10px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .descuento{
+        text-align: center;
+    }
+    .logo-mercado-liebre{
+        width: 33%;
+    }
+    
+    .buscador{
+        width: 30%;
+        /* margin-left: 30px; */
+    }
+    .cuotas{
+        width: 33%;
+    }
+}
+
+@media (min-width: 769px) {
+    .articulo{
+        flex-basis: 24%;
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer section{
+        padding: 5px;
+        width: 30%;
+        margin: 10px;
+    }
+    footer div{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
